@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s  # Intervalle de collecte des métriques
+
+scrape_configs:
+  - job_name: 'docker_containers'
+    static_configs:
+      - targets: ['node-exporter:9100']

@@ -1,0 +1,41 @@
+services:
+  video-server:
+    build: ./video-server
+    container_name: video-server
+    ports:
+      - "8080:80"
+    networks:
+      - video-net
+
+  vlc-client:
+    build: ./vlc-client
+    container_name: vlc-client
+    depends_on:
+      - video-server
+    cap_add:
+      - NET_ADMIN
+    networks:
+      - video-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - video-net
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    ports:
+      - "9100:9100"
+    networks:
+      - video-net
+
+networks:
+  video-net:
+    driver: bridge
+
