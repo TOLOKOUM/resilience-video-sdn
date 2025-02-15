@@ -7,7 +7,7 @@ Ce projet a pour objectif de démontrer la **résilience d'un système vidéo co
 Le système met en œuvre une architecture de réseau virtuelle (SDN) permettant de réagir en temps réel aux conditions changeantes de la bande passante, tout en maintenant une qualité vidéo optimale. L'application de cette solution est particulièrement pertinente pour les réseaux à haute demande de bande passante, tels que ceux utilisés pour le **streaming vidéo en haute définition**.
 
 Le projet est un projet académique de fin de semestre dans le cadre de l'unité d'enseignement "Cloud Computing".
-Il a été réalisé par les étudiants : TOLOKOUM David Rive, BIKOURI BI BEP Henri, DJOUKOUO KALLA Vanessa, DONGMO Prince Williams, MBOLANG TIDANG Henri, avec TOLOKOUM David comme chef de groupe.
+Il a été réalisé par les étudiants : TOLOKOUM David Rive (chef de groupe), BIKOURI BI BEP Henri, DJOUKOUO KALLA Vanessa, DONGMO Prince Williams, MBOLANG TIDANG Henri, TIWA TIOTSAP AYMAR ARNOLD. chef de groupe.
 
 ## Table des matières
 
@@ -92,6 +92,7 @@ resilience-video-sdn/
 │   └── videos/               # Vidéos stockées pour le streaming
 ├── vlc-client/               # Conteneur pour le client VLC
 │   └── Dockerfile            # Dockerfile du client VLC
+
 ### Émulation de la perte de bande passante
 
 Pour émuler les variations de bande passante, nous utilisons `tc` (Traffic Control), un outil de gestion du trafic réseau sous Linux. Cela permet de simuler des situations où la bande passante du réseau fluctue, forçant le système à réagir et à ajuster les flux dynamiquement.
