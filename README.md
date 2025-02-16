@@ -7,7 +7,7 @@ Ce projet a pour objectif de démontrer la **résilience d'un système vidéo co
 Le système met en œuvre une architecture de réseau virtuelle (SDN) permettant de réagir en temps réel aux conditions changeantes de la bande passante, tout en maintenant une qualité vidéo optimale. L'application de cette solution est particulièrement pertinente pour les réseaux à haute demande de bande passante, tels que ceux utilisés pour le **streaming vidéo en haute définition**.
 
 Le projet est un projet académique de fin de semestre dans le cadre de l'unité d'enseignement "Cloud Computing".
-Il a été réalisé par les étudiants : TOLOKOUM David Rive (chef de groupe), BIKOURI BI BEP Henri, DJOUKOUO KALLA Vanessa, DONGMO Prince Williams, MBOLANG TIDANG Henri, TIWA TIOTSAP AYMAR ARNOLD. chef de groupe.
+Il a été réalisé par les étudiants : TOLOKOUM David Rive (chef de groupe), BIKOURI BI BEP Henri, DJOUKOUO KALLA Vanessa, DONGMO Prince Williams, MBOLANG TIDANG Henri, TIWA TIOTSAP AYMAR ARNOLD.
 
 ## Table des matières
 
